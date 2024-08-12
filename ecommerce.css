@@ -115,6 +115,7 @@ body {
     .navbar {
         opacity: 0.95;
     }
+    
     .navbar-container input[type="checkbox"],
     .navbar-container .hamburger-lines {
         display: block;
@@ -555,11 +556,11 @@ body {
 
 
 /* //........ seller  ........// */
-
+#sellers{
+}
 .best-seller {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-around;
 }
 
 .best-seller .red {
@@ -610,7 +611,6 @@ body {
 .seller .best-p1 {
     width: 250px;
     height: 370px;
-    /* border: 2px solid black; */
 }
 
 .seller .best-p1 img {
@@ -671,6 +671,124 @@ body {
     font-size: 14px;
     cursor: pointer;
 } */
+
+
+
+
+/* responsive seller
+*/
+@media (max-width: 728px) {
+    .best-seller {
+       
+    }
+    
+    .best-seller .red {
+        color: var(--primary-color);
+        cursor: pointer;
+    }
+    
+    .best-seller .blue {
+        color: #8989ce;
+        cursor: pointer;
+    }
+    
+    .best-seller .white {
+        color: var(--light-black);
+        cursor: pointer;
+    }
+    
+    .best-seller .grey {
+        color: grey;
+        cursor: pointer;
+    }
+    
+    .best-seller .brown {
+        color: rgb(175, 53, 53);
+        cursor: pointer;
+    }
+    
+    .best-seller .yellow {
+        color: #ffff00;
+        cursor: pointer;
+    }
+    
+    .best-seller .orange {
+        color: #ffa500;
+        cursor: pointer;
+    }
+    
+    .best-seller .green {
+        color: #008000;
+        cursor: pointer;
+    }
+    
+    .seller h2 {
+        margin-top: 65px;
+        margin-bottom: 20px;
+    }
+    
+    .seller .best-p1 {
+        width: 155px;
+        height: 270px;
+    }
+    
+    .seller .best-p1 img {
+        display: flex;
+        height: 180px;
+        width: 150px;
+    }
+    
+    .seller .best-p1 .price {
+
+    }
+
+    
+    .best-seller .buy-now a {
+        text-decoration: none;
+        color: var(--white);
+    }
+    
+    .seller a:hover {
+        color: #f05e8a;
+    }
+    
+    .best-seller .buy-now button,
+    .best-seller .add-cart button {
+        padding: 7px 7px;
+        margin-top: 5px;
+        font-size: 10px;
+        cursor: pointer;
+        text-transform: uppercase;
+        background-color: #f05e8a;
+        color: var(--white);
+        border: none;
+        border-radius: 15px;
+        font-weight: 400;
+        border: 1px solid #f05e8a;
+        transition: 0.5s;
+    }
+    
+    .best-seller .buy-now button:hover,
+    .best-seller .add-cart button:hover {
+        background-color: var(--white);
+        font-weight: 500;
+    }
+    
+    .best-seller .buy-now button:hover a,
+    .best-seller .add-cart button:hover a {
+        color: #f05e8a;
+    }
+    
+    
+    /* .best-seller .add-cart button {
+        padding: 5px 5px;
+        margin-top: 5px;
+        font-size: 14px;
+        cursor: pointer;
+    } */
+    
+    
+}
 
 
 /* //........ deal of week ........// */
@@ -1145,7 +1263,7 @@ iframe {
     }
     .best-seller {
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
         align-items: center;
     }
     .l-news {
@@ -1257,7 +1375,7 @@ iframe {
 @media(min-width: 501px) and (max-width: 768px) {
     .form {
         display: flex;
-        flex-direction: column;
+        flex-direction: umn;
     }
     .form .form-details button {
         margin-left: 0;
