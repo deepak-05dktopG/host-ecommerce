@@ -115,7 +115,6 @@ body {
     .navbar {
         opacity: 0.95;
     }
-    
     .navbar-container input[type="checkbox"],
     .navbar-container .hamburger-lines {
         display: block;
@@ -741,7 +740,10 @@ body {
     .seller .best-p1 .price {
 
     }
-
+    
+  .colors{
+    margin-right: 45px;
+  }
     
     .best-seller .buy-now a {
         text-decoration: none;
